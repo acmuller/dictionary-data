@@ -1,0 +1,319 @@
+/* 
+css for DDB and CJKV-E  displays
+*/
+
+/* PART 1: CJKV-E specific styles */
+
+
+/* The main body style for entry and search results displays */
+
+body.dealt
+ {
+  background-color: #ffeec0;
+  font-family: "Calibri"; 
+  margin-left: 5%; 
+  margin-right: 5%; 
+ }
+
+
+/* The Dictionary name at the top of each entry  */
+
+.dealt-head
+  {
+  text-align:center;
+  font-size:150%; 
+  color:red; 
+  text-align:center
+ }
+
+
+/* The headword at the top of the entry  */
+
+.dealt-hdwd
+ {
+  font-size:200%;
+  font-family: Simsun,MingLiU,Mincho;
+ }
+
+
+/* Various section labels: names should be self-explanatory  */
+
+.dealt-meanings-label
+
+  {
+   font-size: 110%; 
+   text-decoration: underline; 
+   font-family: "Calibri"; 
+   color:blue;
+  }
+
+.dealt-compounds-label
+  {
+   color:darkblue; 
+   font-family:"Calibri"
+  }
+
+.dealt-dictref-label
+  {
+  font-size:120%; 
+  color:green; 
+  font-weight:bold;
+  }
+
+
+p.dealt  /* transferred from xsl  (not clear where this is actually used)*/
+  {
+   margin-top: 0;
+   margin-bottom: 0;
+   text-indent: 3em 
+   }
+
+
+/* PART 2: DDB-specific styles */
+
+body.ddb-body
+ {
+
+  background-color: #EFF0C6;
+  font-family: "Calibri"; 
+  margin-left: 5%;    /* Copied from dealt xsl margination styling */
+  margin-right: 5%;
+ }
+
+p.ddb  /* transferred from xsl */
+  {
+   font-family: "Calibri";
+   margin-top: 0;
+   margin-bottom: 0;
+   text-indent: 3em
+   }
+
+p.ddb-dictrefs
+  {
+  font-size:100%; 
+  color:black; 
+ margin-bottom: 0em; 
+ margin-bottom: 0em; 
+line-height: 50%; 
+  }
+
+.ddb-head
+  {
+  text-align:center;
+  font-size:150%; 
+  color:green; 
+  text-align:center
+ }
+
+
+.ddb-hdwd
+ {
+  font-size:200%;
+  font-family: Simsun,MingLiU,Mincho;
+  color:black;
+ }
+
+.ddb-meanings-label
+
+  {
+   font-size: 110%; 
+   text-decoration: underline; 
+   font-family: "Calibri"; 
+   color:blue;
+  }
+
+.ddb-basic-meaning
+
+{
+  font-weight:bold; 
+  font-family: "Calibri";
+  color:black;
+}
+
+.ddb-sense
+
+{
+ font-family: "Calibri";
+}
+
+
+.ddb-dictref-label
+  {
+  font-size:120%; 
+  color:green; 
+  font-weight:bold;
+  }
+
+.ddb-copyright-label
+  {
+   text-align:center; 
+   text-decoration:underline; 
+   font-size:small;
+  }
+
+.ddb-notes-label
+  {
+   text-decoration:underline; 
+  }
+
+
+.ddb-copyright-notice
+  {
+   font-size:small
+  }
+
+
+.ddb-menubar
+ {
+  text-align:center;
+ }
+
+.ddb-m-w-link
+
+{
+ text-decoration: underline; 
+ color: black; 
+ font-style:italic
+}
+
+.ddb-sanskrit-nolink
+
+{
+ color: black;
+ font-style:italic
+}
+
+
+.ddb-canonref
+{
+ text-decoration: none
+}
+
+.ddb-satref
+{
+text-decoration: none
+}
+
+/* PART 3: Styles not specifically associated with dictionary entries*/
+
+
+
+body.lokaksema
+ {
+
+  background-color: #cfcccf;
+  font-family: "Calibri";  /* transferred from xsl */
+  margin-left: 5%;    /* Copied from dealt xsl margination styling */
+  margin-right: 5%;
+ }
+
+
+
+iframe.lokaksema
+ {
+  width: 90%;
+  height: 40%;
+
+ }
+
+.bold-red
+
+{
+  color:red; 
+  font-weight:bold;
+}
+
+
+.superscript
+ {
+  vertical-align:super; 
+  font-size:60%
+ }
+
+
+.foreign
+ {
+  font-style:italic;
+ }
+p.indent
+ {
+   text-indent:5%;
+  margin-top:0mm;
+  margin-bottom:0mm;
+ } 
+ p.plain
+ {
+  text-indent:0mm;
+  margin-top:0mm;
+  margin-bottom:0mm;
+ }
+p.bq
+
+{
+  margin-left:10mm; 
+  margin-top:1em; 
+  margin-bottom:1em; 
+  text-indent:0mm; 
+  margin-right:2mm
+ }
+ 
+ p.head-bold
+ 
+ {
+margin-top:1em; 
+margin-bottom:1em; 
+text-indent:0mm; 
+margin-right:2mm;
+font-weight: bold
+ }
+
+ p.head-underline
+ 
+ {
+margin-top:1em; 
+margin-bottom:1em; 
+text-indent:0mm; 
+margin-right:2mm;
+text-decoration: underline
+ }
+
+
+p.update-notice
+
+{
+ margin-top: 0em; 
+margin-bottom: 0em; 
+ font-family: "Calibri";
+}
+
+li
+  {
+   font-family: "Calibri";
+  color:black;
+   }
+
+.ddb
+  {
+   font-family: "Calibri";
+  color:black;
+   }
+   
+ table, th, td {
+   border: 1px solid black;
+}
+ol {
+    counter-reset: list-item item;
+}
+
+ol > li {
+    counter-increment: item;
+}
+
+ol ol > li {
+    display: block;
+}
+
+ol ol > li:before {
+    content: counters(item, ".") ". ";
+    margin-left: -10px;
+}
